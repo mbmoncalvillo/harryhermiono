@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p >Introduce altura</p>
+<input type="number" id="altura"/>
+<input type="button" onclick="altura();" value="Pulsar_Sakatu"/>
+<p >Introduce peso</p>
+<input type="number" id="peso"/>
+<p id="status">
+<script>
+function altura()
+{
+if ((document.getElementById("altura").value>190) || (document.getElementById("peso").value>100))
+document.getElementById("status").innerHTML="Muy bien";
+else 
+document.getElementById("status").innerHTML="También bien"
+}
+</script>
+</body>
+</html>
